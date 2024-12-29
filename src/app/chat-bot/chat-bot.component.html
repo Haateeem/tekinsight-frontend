@@ -1,0 +1,40 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <!-- Chat Header -->
+                <div class="card-header bg-warning text-white d-flex justify-content-between align-items-center">
+                    <h5> Chatbot</h5>
+
+                </div>
+
+                <!-- Chat Body -->
+                <div class="card-body">
+                    <div class="direct-chat-messages" id="chat-messages">
+                        <!-- Example Chat History -->
+                        <div class="direct-chat-msg left">
+                            <div class="d-flex">
+                                <img class="direct-chat-img" src="assets/images/logo.png" alt="Bot">
+                                <div class="direct-chat-text bg-light">
+                                    Hello! How can I assist you today?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat Footer -->
+                <div class="card-footer">
+                    <form method="POST" id="chat-form">
+                        <div class="input-group">   
+                            <input type="text" name="question" id="user-input" placeholder="Type your message..." class="form-control" required>
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-warning">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

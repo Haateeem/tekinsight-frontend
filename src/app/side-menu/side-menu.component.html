@@ -1,0 +1,42 @@
+<div id="default-sidebar" class="">
+
+	<aside id="sidebar" class="sidebar px-0 custom-scrollbar">
+		<ul class="sidebar-nav" id="sidebar-nav">
+
+			<li class="nav-item" *ngIf="true">
+				<a class="nav-link collapsed" data-bs-target="#dashboard" data-bs-toggle="collapse" [routerLink]="['dashboard']" routerLinkActive="active">
+					<i class="pi pi-map-marker"></i><span>Dashboard</span><i class="pi pi-chevron-down ms-auto"></i>
+				</a>
+			</li>
+
+            <li class="nav-item" *ngIf="true">
+				<a class="nav-link collapsed" data-bs-target="#dashboard" data-bs-toggle="collapse" [routerLink]="['chatbot']" routerLinkActive="active">
+					<i class="pi pi-map-marker"></i><span>Chatbot</span><i class="pi pi-chevron-down ms-auto"></i>
+				</a>
+
+			</li>
+
+			<li class="nav-item" *ngIf="true">
+				<a class="nav-link collapsed" data-bs-target="#dashboard" data-bs-toggle="collapse" [routerLink]="['knowledge-base']" routerLinkActive="active">
+					<i class="pi pi-map-marker"></i><span>Knowledge Base</span><i class="pi pi-chevron-down ms-auto"></i>
+				</a>
+
+			</li>
+
+			<li class="nav-item" *ngIf="true">
+				<a class="nav-link collapsed" data-bs-target="#dashboard" data-bs-toggle="collapse" [routerLink]="['security-roles']" routerLinkActive="active">
+					<i class="pi pi-map-marker"></i><span>Security Roles</span><i class="pi pi-chevron-down ms-auto"></i>
+				</a>
+
+			</li>
+
+
+		</ul>
+	</aside>
+
+
+</div>
+
+<!-- <a [routerLink]="['dashboard']" routerLinkActive="active">
+	<i class="pi pi-map-marker"></i><span>Dashboard</span>
+</a> -->

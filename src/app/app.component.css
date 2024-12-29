@@ -1,0 +1,103 @@
+/* login styles -hatim */
+.login-container {
+    box-sizing: border-box;
+    margin: auto auto;
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    width: 80vw;
+    border-radius: 10px;
+    padding: 1rem 0rem 0rem 0rem;
+}
+
+.card-body {
+    margin: 0rem 5rem;
+}
+
+.bg-hrms {
+    background-color: #ff7804;
+}
+
+.btn-hrms {
+    background-color: #ff7804;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s opacity ease;
+}
+
+.btn-hrms:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 0;
+    }
+
+    .login-container {
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .login-card {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .card-body {
+        margin: 0rem 0rem;
+    }
+}
+
+/* layout styles starts here -hatim */
+
+.view-page {
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+    min-height: 100vh;
+    max-height: calc(100vh) !important;
+}
+
+.side-menu {
+    flex-shrink: 0;
+    /* background-color: #2c2c2c; */
+    /* background: linear-gradient(45deg, #ff7f00, #ff9f33, #ffbf66, #ffcc99); */
+    background: linear-gradient(135deg, #ff7f00, #ffb347);
+
+    overflow-y: auto;
+}
+
+.screen-content {
+    overflow-x: auto;
+    max-height: 100vh;
+}
+
+@media (max-width:768px) {
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Semi-transparent background */
+        z-index: 995;
+        /* Ensure it's below the sidebar but above other content */
+        overflow: hidden !important;
+    }
+
+    .header-space {
+        height: 3.75rem;
+    }
+}

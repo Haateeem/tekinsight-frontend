@@ -1,0 +1,49 @@
+<div class="login-container">
+    <div class="login-box">
+        <div class="logo">
+            <img class="direct-chat-img" src="assets/images/logo.png" alt="Bot">
+        </div>
+        
+        <!-- Flash messages can be implemented via Angular services or other methods -->
+        <div *ngIf="message" class="alert alert-{{ message.category }} alert-dismissible fade show" role="alert">
+            {{ message.text }}
+            <button type="button" class="close" (click)="closeMessage()" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="input-field"
+                    placeholder="Enter email"
+                    [(ngModel)]="email"
+                    required
+                    #emailInput="ngModel"
+                />
+                <div *ngIf="emailInput.invalid && emailInput.touched" class="error">Email is required</div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    class="input-field"
+                    placeholder="Password"
+                    [(ngModel)]="password"
+                    required
+                    #passwordInput="ngModel"
+                />
+                <div *ngIf="passwordInput.invalid && passwordInput.touched" class="error">Password is required</div>
+            </div>
+
+            <button type="submit" class="login-button" [disabled]="loginForm.invalid">Login</button>
+        </form>
+    </div>
+</div>

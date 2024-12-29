@@ -1,0 +1,193 @@
+header {
+    display: flex;
+    align-items: center;
+    background-color: #f76c0a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+header img {
+    height: 70px;
+    width: 150px;
+    margin-right: -5px;
+}
+
+header h2 {
+    margin: 0;
+    color: white;
+    font-size: 2.5em;
+}
+
+h1 {
+    text-align: right;
+    color: white; /* Vibrant orange for the header */
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+/* Container Styles */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: -10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+.card h2 {
+    color: #f76c0a;
+    margin-bottom: 20px;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+
+/* Department Card Styles */
+.department-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.department {
+    text-align: center;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.department img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.department h3 {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #f76c0a;
+}
+
+/* Graph Styles */
+
+
+.bar-graph {
+    width: 30%;
+    height: 100px;
+    position: relative;
+}
+
+.circle-graph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Add space between cards */
+    gap: 20px; /* Adjust spacing between cards */
+    margin-top: 20px;
+}
+.circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: conic-gradient(#f76c0a);
+}
+
+.circle span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+.card-row {
+    display: flex;
+    gap: 20px; /* Space between cards */
+    margin-top: 20px;
+    width: auto;
+}
+
+.small-card {
+    flex: 1; /* Ensures equal width of cards */
+    max-width: 30%; /* Limit the width to 45% of the row */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    left: 100px;
+}
+
+.small-card1 {
+    flex: 1; /* Ensures equal width of cards */
+    max-width: 24%; /* Limit the width to 45% of the row */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    left: 100px;
+}
+#iframe-container {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Adjust height relative to the viewport, e.g., 80% */
+    overflow: hidden; /* Hide any overflow for clean visuals */
+}
+
+#responsive-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.custom-btn {
+    background-color: white; /* White background */
+    color: black;            /* Black text */
+    border: 2px solid black; /* Optional: Black border for clarity */
+    text-align: left;        /* Align text to the left */
+    padding: 8px 16px;       /* Adjust padding if necessary */
+    font-size: 1.5em; 
+    font-type: bold;         /* Font size */
+    cursor: pointer;
+    width: 7%;
+    height: 10%;
+    position: left;
+    margin-left: 400px;}
+
+.custom-btn:hover {
+    background-color: #f0f0f0; /* Slight grey for hover effect */
+    color: black;              /* Keep text black on hover */
+}
+

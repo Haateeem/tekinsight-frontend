@@ -1,0 +1,181 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	scroll-behavior: smooth;
+}
+a {
+	color: #4154f1;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #717ff5;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Nunito", sans-serif;
+}
+
+
+/*--------------------------------------------------------------
+  # Sidebar
+  --------------------------------------------------------------*/
+  .sidebar {
+    background-color: transparent;
+    width: 220px;
+    z-index: 996;
+    transition: all 0.3s;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #aab7cf transparent;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-grow: 1;
+	margin: auto;
+}
+
+.sidebar-nav {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.sidebar-nav li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.sidebar-nav .nav-item {
+	margin: 3px 0;
+}
+
+.sidebar-nav .nav-link {
+	display: flex;
+	align-items: center;
+	font-size: 0.8rem;
+	font-weight: 600;
+	transition: background-color 0.3s ease;
+	color: #111111;
+	background: rgba(255, 255, 255, 0.2);
+	padding: 10px 15px;
+}
+
+.sidebar-nav .nav-link:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #fff;
+}
+
+.sidebar-nav .nav-link i {
+	font-size: 1rem;
+	margin-right: 10px;
+}
+
+.sidebar-nav .nav-content {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.sidebar-nav .nav-content a {
+	display: flex;
+	line-height: 1;
+	align-items: center;
+	font-size: 0.8rem;
+	font-weight: 600;
+	color: #ffffff;
+	transition: all 0.3s ease;
+	padding: 10px 0 10px 30px;
+	transition:all 0.3s ease;
+}
+
+.sidebar-nav .nav-content a:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav .nav-content a.active {
+	background-color: rgba(255, 255, 255, 0.4);
+	color: rgb(255, 255, 255);
+}
+
+.sidebar-nav .nav-content a i {
+	font-size: 0.8rem;
+	margin-right: 8px;
+	line-height: 1;
+}
+
+.header-cover {
+	display: none;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+		background-color: rgb(86, 148, 204);
+		box-shadow: none;
+		position: fixed;
+		left: 0;
+		top: 60px;
+		height: calc( 100vh - 60px );
+		width: 0;
+	}
+
+}
+
+.report-dd-btn {
+	background-color: #fff;
+	color: rgb(37, 138, 226) !important;
+}
+
+.report-dd-btn:hover {
+	background-color: transparent;
+	color: rgb(255, 255, 255) !important;
+}
+
+.title-div {
+	padding: 1rem;
+}
+
+/* .title-div img {
+	filter: invert(100%) sepia(1) saturate(0) brightness(2);
+    mix-blend-mode: screen;
+} */
+
+.user-card {
+    background-color: transparent;
+    border-radius: 10px; 
+    max-width: 300px; 
+    margin: 0 auto; 
+}
+
+.user-image {
+    width: 80px; /* Set image size */
+    height: 80px;
+    object-fit: cover; /* Ensure the image fills the circle properly */
+}
+
+.user-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+	color: #e4e4e4;
+}
+
+.user-id {
+    font-size: 1.1rem;
+	font-weight: bold;
+	background-color: #a7a7a7;
+	margin: 0;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 2px 10px; 
+}
